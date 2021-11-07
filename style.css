@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* ## Colors */
+
+  --pale_blue: hsl(225, 100%, 94%);
+  --bright_blue: hsl(245, 75%, 52%);
+  --very_pale_blue: hsl(225, 100%, 98%);
+  --desaturated_blue: hsl(224, 23%, 55%);
+  --dark_blue: hsl(223, 47%, 23%);
+  --normal_weight: 500;
+  --bold_weight: 700;
+  --very_bold_weight: 900;
+}
+img {
+  max-width: 100%;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--pale_blue);
+  font-family: "Red Hat Display", sans-serif;
+}
+.card {
+  max-width: 90%;
+  width: 22rem;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 0.1);
+}
+.word_cont {
+  padding: 2rem;
+}
+.order,
+.description,
+.plan_cont,
+button {
+  margin-bottom: 1rem;
+}
+.word_cont .plan_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--very_pale_blue);
+}
+button {
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  box-shadow: 0 2px 15px 5px var(--pale_blue);
+  font-family: inherit;
+  font-weight: var(--bold_weight);
+  color: var(--very_pale_blue);
+  background-color: var(--bright_blue);
+}
+button,
+.change,
+.call {
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+}
+.order,
+.a_plan--cont h3 {
+  color: var(--dark_blue);
+}
+p,
+small {
+  color: var(--desaturated_blue);
+}
+.change {
+  color: var(--bright_blue);
+  font-size: 0.8rem;
+  font-weight: var(--bold_weight);
+}
+.change:hover {
+  text-decoration: none;
+}
+.music_icon,
+.a_plan--cont,
+.a_plan--cont h3 {
+  display: inline-block;
+}
+small {
+  display: block;
+}
+.a_plan--cont h3 {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+.call {
+  margin-top: 1rem;
+  font-weight: var(--bold_weight);
+  font-size: 0.8rem;
+}
+.call:hover {
+  color: var(--dark_blue);
+}
+.music_icon {
+  margin-right: 0.4rem;
+}
+@media screen and (max-width: 420px) {
+  body {
+    font-size: 14px;
+  }
+}
